@@ -41,8 +41,8 @@ The credential is validated automatically against the ScrapingAnt API.
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
 | URL | string | — | Target webpage URL (required) |
-| Browser Rendering | boolean | `true` | Use headless Chrome (10 credits when on, 1 when off) |
-| Proxy Type | options | `datacenter` | `datacenter` or `residential` (25 credits) |
+| Browser Rendering | boolean | `true` | Use headless Chrome for JavaScript rendering |
+| Proxy Type | options | `datacenter` | `datacenter` or `residential` |
 | Proxy Country | string | — | Two-letter country code (e.g., `us`, `gb`, `de`) |
 | Return Page Source | boolean | `false` | Return raw page source instead of rendered HTML |
 | JavaScript Snippet | string | — | Custom JS to execute on the page before returning (auto Base64-encoded) |
@@ -70,13 +70,7 @@ This node has `usableAsTool` enabled, so it can be connected directly to the **n
 
 ## Credit Costs
 
-| Configuration | Credits per Request |
-|---------------|-------------------|
-| Browser rendering + datacenter proxy | 10 |
-| No browser rendering | 1 |
-| Residential proxy | 25 |
-| Markdown output | 1 per 30 characters + base cost |
-| AI extraction | Based on page + output size |
+Credit costs vary by operation, rendering mode, and proxy type. See the [official credit cost reference](https://docs.scrapingant.com/credits-cost) for current pricing.
 
 ## Resources
 
