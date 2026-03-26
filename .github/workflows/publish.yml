@@ -23,6 +23,9 @@ jobs:
 
       - run: npm run build
 
+      - name: Remove test files before lint
+        run: rm -rf tests jest.config.ts
+
       - run: npm run lint
 
       - run: npm publish --provenance --access public
