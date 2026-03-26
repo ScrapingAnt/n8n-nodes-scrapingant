@@ -6,13 +6,20 @@ Scrape websites, convert pages to Markdown, extract structured data with AI, and
 
 ## Installation
 
-### In n8n Cloud / Desktop
+### n8n Cloud / Desktop
 
-1. Go to **Settings** > **Community Nodes**
-2. Enter `n8n-nodes-scrapingant`
-3. Click **Install**
+1. Open any workflow and click **+** (or press **N**) to open the nodes panel
+2. Search for **ScrapingAnt**
+3. Look for the **"More from the community"** section at the bottom of the results
+4. Click the **ScrapingAnt** node and hit **Install**
+
+> **Note:** Only verified community nodes are available on n8n Cloud. If ScrapingAnt does not appear yet, it may still be pending verification.
 
 ### Self-hosted
+
+Install from the n8n UI: **Settings** > **Community Nodes** > enter `n8n-nodes-scrapingant` > **Install**
+
+Or via npm:
 
 ```bash
 npm install n8n-nodes-scrapingant
