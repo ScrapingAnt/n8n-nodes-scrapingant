@@ -1,0 +1,60 @@
+{
+	"name": "n8n-nodes-scrapingant",
+	"version": "0.1.0",
+	"description": "n8n community node for ScrapingAnt web scraping API",
+	"license": "MIT",
+	"homepage": "https://scrapingant.com",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n-nodes",
+		"web-scraping",
+		"scraping",
+		"proxy",
+		"ai-extraction"
+	],
+	"author": {
+		"name": "ScrapingAnt",
+		"email": "support@scrapingant.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/scrapingant/n8n-nodes-scrapingant.git"
+	},
+	"engines": {
+		"node": ">=20.15"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease",
+		"test": "jest"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/ScrapingAntApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/ScrapingAnt/ScrapingAnt.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"@types/jest": "^30.0.0",
+		"eslint": "9.39.4",
+		"jest": "^30.3.0",
+		"prettier": "3.8.1",
+		"ts-jest": "^29.4.6",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
