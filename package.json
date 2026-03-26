@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-scrapingant",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "n8n community node for ScrapingAnt web scraping API",
 	"license": "MIT",
 	"homepage": "https://scrapingant.com",
