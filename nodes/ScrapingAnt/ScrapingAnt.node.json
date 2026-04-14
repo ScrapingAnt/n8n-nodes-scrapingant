@@ -1,0 +1,19 @@
+{
+	"node": "n8n-nodes-scrapingant.scrapingAnt",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development", "Data & Storage"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.scrapingant.com/n8n-integration"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.scrapingant.com/n8n-integration"
+			}
+		]
+	},
+	"alias": ["scrape", "scraping", "web scraping", "crawler", "html", "markdown", "proxy", "ScrapingAnt"]
+}
